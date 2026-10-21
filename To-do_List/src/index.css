@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.form-tugas {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.input-tugas {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-tugas:focus {
+  border-color: #3b82f6;
+}
+
+.btn-tambah {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-tambah:hover {
+  background-color: #2563eb;
+}
+
+.daftar-tugas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-tugas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.item-tugas.selesai {
+  opacity: 0.6;
+}
+
+.teks-tugas {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.item-tugas.selesai .teks-tugas span:last-child {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9ca3af;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+.checkbox.checked {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.btn-hapus {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.btn-hapus:hover {
+  background-color: #dc2626;
+}
+
+.pesan-kosong {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  padding: 20px 0;
+}
